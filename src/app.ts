@@ -2,8 +2,11 @@
 import express, { Request, Response, NextFunction } from 'express'; // => ESモジュールの構文
 
 import todoRoutes from './routes/todos';
+import { json } from 'body-parser';
 
 const app = express();
+
+app.use(json());
 
 app.use('/todos', todoRoutes);
 
