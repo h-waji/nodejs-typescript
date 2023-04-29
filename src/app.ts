@@ -1,3 +1,6 @@
-let year: number;
-year = 2023;
-console.log(year);
+// const express = require('express'); // => CommonJSの構文
+import express from 'express'; // => ESモジュールの構文
+
+const app = express();
+
+app.listen(3000);
